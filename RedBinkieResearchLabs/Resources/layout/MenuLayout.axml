@@ -40,14 +40,6 @@
             android:layout_marginLeft="8dp"
             android:textColor="#fff8f8f8" />
     </LinearLayout>
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="1dp"
-        android:id="@+id/view2"
-        android:background="#abe4e4e4"
-        android:layout_gravity="center"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="14dp" />
     <LinearLayout
         android:orientation="horizontal"
         android:minWidth="25px"
@@ -66,14 +58,6 @@
             android:layout_marginLeft="8dp"
             android:textColor="#fff8f8f8" />
     </LinearLayout>
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="1dp"
-        android:id="@+id/view3"
-        android:background="#abe4e4e4"
-        android:layout_gravity="center"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="14dp" />
     <LinearLayout
         android:orientation="horizontal"
         android:minWidth="25px"
@@ -88,6 +72,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textSelfService"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:textColor="#fff8f8f8" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearMenu4"
+        android:layout_margin="8dp">
+        <TextView
+            android:text="Contact us"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textContactus"
             android:layout_gravity="center"
             android:layout_marginLeft="8dp"
             android:textColor="#fff8f8f8" />
