@@ -92,7 +92,6 @@ namespace RedBinkieResearchLabs
         {
             get
             {
-                var menu = FindViewById<FlyOutContainer>(Resource.Id.FlyOutContainer);
                 return FindViewById(RedBinkieResearchLabs.Resource.Id.FlyOutMenu);
             }
         }

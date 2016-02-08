@@ -49,6 +49,13 @@
         android:layout_height="wrap_content"
         android:background="@android:color/holo_red_light"
         android:id="@+id/welcomeMessage" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/linearLayout2" />
     <ImageView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
