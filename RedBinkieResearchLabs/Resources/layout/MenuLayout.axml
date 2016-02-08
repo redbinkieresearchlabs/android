@@ -7,11 +7,11 @@
     android:id="@+id/FlyOutMenu"
     android:padding="4dp">
     <TextView
-        android:text="A Title"
+        android:text="Home"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView1"
+        android:id="@+id/textViewHome"
         android:textColor="#ffc1c1c1"
         android:padding="4dp" />
     <View
@@ -31,7 +31,7 @@
         android:id="@+id/linearLayout1"
         android:layout_margin="8dp">
         <TextView
-            android:text="Whatever"
+            android:text="My Profile"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -57,7 +57,7 @@
         android:id="@+id/linearLayout2"
         android:layout_margin="8dp">
         <TextView
-            android:text="Whichever"
+            android:text="My Bills"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -74,4 +74,22 @@
         android:layout_gravity="center"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="14dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearMenu3"
+        android:layout_margin="8dp">
+        <TextView
+            android:text="Self Service"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textSelfService"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:textColor="#fff8f8f8" />
+    </LinearLayout>
 </LinearLayout>

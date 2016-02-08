@@ -1,31 +1,28 @@
-﻿using System;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
 using Android.App;
 using Android.Content;
+using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using Android.OS;
 
 namespace RedBinkieResearchLabs
 {
-//    [Activity(Label = "RedBinkieResearchLabs", MainLauncher = true, Icon = "@drawable/icon")]
-    [Activity(Label = "Wessex Water Services Ltd")]
-
-    public class MainActivity : Activity
+    [Activity(Label = "SelfServiceActivity")]
+    public class SelfServiceActivity : Activity
     {
- //       int count = 1;
-
-        protected override void OnCreate(Bundle bundle)
+        protected override void OnCreate(Bundle savedInstanceState)
         {
-            base.OnCreate(bundle);
+            base.OnCreate(savedInstanceState);
 
-            // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.Main);
+            // Create your application here
+            SetContentView(Resource.Layout.layoutSelfService);
 
-            TextView messageText = FindViewById<TextView>(Resource.Id.welcomeMessage);
-            messageText.Text = "Welcome " + sharedPref.GetPreference(Application.Context,"uname","");
-
-            var menu = FindViewById<FlyOutContainer>(Resource.Id.FlyOutContainer);
+            var menu = FindViewById<FlyOutContainer>(Resource.Id.FlyOutContainerSS);
             var menuButton = FindViewById(Resource.Id.MenuButton);
             menuButton.Click += (sender, e) => {
                 menu.AnimatedOpened = !menu.AnimatedOpened;
@@ -43,7 +40,7 @@ namespace RedBinkieResearchLabs
                 StartActivity(typeof(SelfServiceActivity));
             };
 
+
         }
     }
 }
-

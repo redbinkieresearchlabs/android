@@ -55,6 +55,7 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelfServiceActivity.cs" />
     <Compile Include="sharedPref.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -68,6 +69,12 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\MenuLayout.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\layoutSelfService.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ContentLayoutSS.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>
