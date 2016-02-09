@@ -4,7 +4,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:id="@+id/FlyOutContent"
-    android:background="#ffffffff">
+    android:background="@android:color/darker_gray">
     <View
         android:layout_width="fill_parent"
         android:layout_height="1dp"
@@ -37,45 +37,127 @@
                 android:layout_marginLeft="8dp" />
         </LinearLayout>
     </FrameLayout>
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/relativeLayout1">
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/gridLayout1"
-            android:columnCount="2"
-            android:rowCount="6"
-            android:background="@android:color/darker_gray">
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout1">
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_height="65.0dp"
+            android:layout_width="fill_parent">
             <ImageView
-                android:src="@drawable/exclamation"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:src="@android:drawable/ic_dialog_info"
+                android:layout_width="match_parent"
+                android:layout_column="0"
                 android:id="@+id/imageView1"
-                android:layout_gravity="bottom"
-                android:background="@android:color/holo_blue_dark" />
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp" />
             <TextView
                 android:text="Contact us via our customer service channels"
-                android:textSize="22dip"
-                android:background="@android:color/holo_blue_dark"
-                android:height="50dp"
-                android:layout_width="fill_parent" />
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="2"
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="65.0dp"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:maxLines="3"
+                android:scrollHorizontally="false"
+                android:ellipsize="none"
+                android:layout_weight="1" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout2">
+        <TableRow
+            android:id="@+id/tableRow21"
+            android:layout_height="70.0dp"
+            android:layout_width="wrap_content">
+            <ImageView
+                android:src="@drawable/facebook"
+                android:layout_column="0"
+                android:id="@+id/imageView21"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_height="50dp"
+                android:layout_width="50dp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_column="2"
+                android:id="@+id/linearLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:text="Facebook"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView24" />
+                <TextView
+                    android:text="Visit our facebook page"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView25" />
+            </LinearLayout>
             <TextView
-                android:text="Cell 2"
-                android:textSize="14dip" />
+                android:text="&gt;"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:id="@+id/textView23"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_gravity="center" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow22"
+            android:layout_height="65.0dp"
+            android:layout_width="wrap_content">
+            <ImageView
+                android:src="@drawable/Twitter"
+                android:layout_column="0"
+                android:id="@+id/imageView22"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_height="50dp"
+                android:layout_width="50dp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_column="2"
+                android:id="@+id/linearLayout22"
+                android:layout_width="296.0dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:text="Twitter"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView221" />
+                <TextView
+                    android:text="Follow us on Twitter"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView222" />
+            </LinearLayout>
             <TextView
-                android:text="Cell 3"
-                android:textSize="14dip" />
-        </GridLayout>
-        <ImageView
-            android:src="@drawable/icon"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView1"
-            android:layout_gravity="bottom"
-            android:background="@android:color/holo_blue_light"
-            android:layout_alignParentBottom="true"
-            android:layout_centerInParent="true" />
-    </RelativeLayout>
+                android:text="&gt;"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:id="@+id/textView223"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_gravity="center" />
+        </TableRow>
+    </TableLayout>
 </LinearLayout>

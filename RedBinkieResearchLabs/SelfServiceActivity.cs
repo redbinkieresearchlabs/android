@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace RedBinkieResearchLabs
 {
-    [Activity(Label = "SelfServiceActivity")]
+    [Activity(Theme = "@android:style/Theme.NoTitleBar")]
     public class SelfServiceActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
@@ -22,25 +22,10 @@ namespace RedBinkieResearchLabs
             // Create your application here
             SetContentView(Resource.Layout.layoutSelfService);
 
-            var menu = FindViewById<FlyOutContainer>(Resource.Id.FlyOutContainerSS);
-            var menuButton = FindViewById(Resource.Id.MenuButton);
-            menuButton.Click += (sender, e) => {
-                menu.AnimatedOpened = !menu.AnimatedOpened;
-            };
-
-            //attach event to the menu item Home
-            var menuButtonHome = FindViewById(Resource.Id.textViewHome);
-            menuButtonHome.Click += (sender, e) => {
-                StartActivity(typeof(MainActivity));
-            };
-
-            //attach event to the menu item Self Service
-            var menuButtonSS = FindViewById(Resource.Id.textSelfService);
-            menuButtonSS.Click += (sender, e) => {
-                StartActivity(typeof(SelfServiceActivity));
-            };
-
-
+            //build the menu
+            clsMenu menu = new clsMenu(this);
+            menu.buildMenuSelfService();
+            menu.buildMenu();
         }
     }
 }

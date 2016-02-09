@@ -14,7 +14,7 @@ using Android.Graphics;
 
 namespace RedBinkieResearchLabs
 {
-    [Activity(Label = "Wessex Water Services Ltd", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(MainLauncher = true, Icon = "@drawable/icon", Theme = "@android:style/Theme.NoTitleBar")]
 
     public class doLogin : Activity
     {
