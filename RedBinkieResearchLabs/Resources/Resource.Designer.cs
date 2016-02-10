@@ -28,6 +28,22 @@ namespace RedBinkieResearchLabs
 		{
 		}
 		
+		public partial class Array
+		{
+			
+			// aapt resource value: 0x7f050000
+			public const int faultFilterArray = 2131034112;
+			
+			static Array()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Array()
+			{
+			}
+		}
+		
 		public partial class Attribute
 		{
 			
@@ -48,28 +64,40 @@ namespace RedBinkieResearchLabs
 			public const int action_menu = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int exclamation = 2130837505;
+			public const int chat = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int Facebook = 2130837506;
+			public const int exclamation = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int Icon = 2130837507;
+			public const int Facebook = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int icon1 = 2130837508;
+			public const int helpdesk = 2130837508;
 			
 			// aapt resource value: 0x7f020005
-			public const int iconelse = 2130837509;
+			public const int home = 2130837509;
 			
 			// aapt resource value: 0x7f020006
-			public const int monoandroidsplash = 2130837510;
+			public const int Icon = 2130837510;
 			
 			// aapt resource value: 0x7f020007
-			public const int Twitter = 2130837511;
+			public const int icon1 = 2130837511;
 			
 			// aapt resource value: 0x7f020008
-			public const int Youtube = 2130837512;
+			public const int iconelse = 2130837512;
+			
+			// aapt resource value: 0x7f020009
+			public const int monoandroidsplash = 2130837513;
+			
+			// aapt resource value: 0x7f02000a
+			public const int phone = 2130837514;
+			
+			// aapt resource value: 0x7f02000b
+			public const int Twitter = 2130837515;
+			
+			// aapt resource value: 0x7f02000c
+			public const int Youtube = 2130837516;
 			
 			static Drawable()
 			{
@@ -84,131 +112,263 @@ namespace RedBinkieResearchLabs
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060023
-			public const int FlyOutContainer = 2131099683;
+			// aapt resource value: 0x7f07003f
+			public const int FlyOutContainer = 2131165247;
 			
-			// aapt resource value: 0x7f060019
-			public const int FlyOutContainerContact = 2131099673;
+			// aapt resource value: 0x7f070034
+			public const int FlyOutContainerContact = 2131165236;
 			
-			// aapt resource value: 0x7f06001a
-			public const int FlyOutContainerSS = 2131099674;
+			// aapt resource value: 0x7f070035
+			public const int FlyOutContainerDisclaimer = 2131165237;
 			
-			// aapt resource value: 0x7f060000
-			public const int FlyOutContent = 2131099648;
+			// aapt resource value: 0x7f070036
+			public const int FlyOutContainerFault = 2131165238;
 			
-			// aapt resource value: 0x7f060024
-			public const int FlyOutMenu = 2131099684;
+			// aapt resource value: 0x7f070037
+			public const int FlyOutContainerSS = 2131165239;
 			
-			// aapt resource value: 0x7f060004
-			public const int MenuButton = 2131099652;
+			// aapt resource value: 0x7f070038
+			public const int FlyOutContainerWorks = 2131165240;
 			
-			// aapt resource value: 0x7f060021
-			public const int button1 = 2131099681;
+			// aapt resource value: 0x7f070000
+			public const int FlyOutContent = 2131165184;
 			
-			// aapt resource value: 0x7f060020
-			public const int checkBox1 = 2131099680;
+			// aapt resource value: 0x7f070040
+			public const int FlyOutMenu = 2131165248;
 			
-			// aapt resource value: 0x7f06001e
-			public const int editText1 = 2131099678;
+			// aapt resource value: 0x7f070004
+			public const int MenuButton = 2131165188;
 			
-			// aapt resource value: 0x7f06001f
-			public const int editText2 = 2131099679;
+			// aapt resource value: 0x7f07003e
+			public const int button1 = 2131165246;
 			
-			// aapt resource value: 0x7f06001c
-			public const int errText = 2131099676;
+			// aapt resource value: 0x7f07003d
+			public const int checkBox1 = 2131165245;
 			
-			// aapt resource value: 0x7f060002
-			public const int frameLayout1 = 2131099650;
+			// aapt resource value: 0x7f07003b
+			public const int editText1 = 2131165243;
 			
-			// aapt resource value: 0x7f06001b
-			public const int imageButton1 = 2131099675;
+			// aapt resource value: 0x7f07003c
+			public const int editText2 = 2131165244;
 			
-			// aapt resource value: 0x7f060008
-			public const int imageView1 = 2131099656;
+			// aapt resource value: 0x7f07003a
+			public const int errText = 2131165242;
 			
-			// aapt resource value: 0x7f06000e
-			public const int imageView21 = 2131099662;
+			// aapt resource value: 0x7f070030
+			public const int filterFaultStatus = 2131165232;
 			
-			// aapt resource value: 0x7f060014
-			public const int imageView22 = 2131099668;
+			// aapt resource value: 0x7f070002
+			public const int frameLayout1 = 2131165186;
 			
-			// aapt resource value: 0x7f060003
-			public const int linearLayout1 = 2131099651;
+			// aapt resource value: 0x7f070039
+			public const int imageButton1 = 2131165241;
 			
-			// aapt resource value: 0x7f06000f
-			public const int linearLayout2 = 2131099663;
+			// aapt resource value: 0x7f070008
+			public const int imageView1 = 2131165192;
 			
-			// aapt resource value: 0x7f060015
-			public const int linearLayout22 = 2131099669;
+			// aapt resource value: 0x7f070010
+			public const int imageView21 = 2131165200;
 			
-			// aapt resource value: 0x7f060026
-			public const int linearMenu3 = 2131099686;
+			// aapt resource value: 0x7f070016
+			public const int imageView22 = 2131165206;
 			
-			// aapt resource value: 0x7f060028
-			public const int linearMenu4 = 2131099688;
+			// aapt resource value: 0x7f070022
+			public const int imageView231 = 2131165218;
 			
-			// aapt resource value: 0x7f060006
-			public const int relativeLayout1 = 2131099654;
+			// aapt resource value: 0x7f070028
+			public const int imageView241 = 2131165224;
 			
-			// aapt resource value: 0x7f060009
-			public const int tableLayout1 = 2131099657;
+			// aapt resource value: 0x7f07001c
+			public const int imageView251 = 2131165212;
 			
-			// aapt resource value: 0x7f06000c
-			public const int tableLayout2 = 2131099660;
+			// aapt resource value: 0x7f070052
+			public const int linearAbout = 2131165266;
 			
-			// aapt resource value: 0x7f06000a
-			public const int tableRow1 = 2131099658;
+			// aapt resource value: 0x7f070050
+			public const int linearDisc = 2131165264;
 			
-			// aapt resource value: 0x7f06000d
-			public const int tableRow21 = 2131099661;
+			// aapt resource value: 0x7f070046
+			public const int linearFault = 2131165254;
 			
-			// aapt resource value: 0x7f060013
-			public const int tableRow22 = 2131099667;
+			// aapt resource value: 0x7f070003
+			public const int linearLayout1 = 2131165187;
 			
-			// aapt resource value: 0x7f060029
-			public const int textContactus = 2131099689;
+			// aapt resource value: 0x7f070011
+			public const int linearLayout2 = 2131165201;
 			
-			// aapt resource value: 0x7f060027
-			public const int textSelfService = 2131099687;
+			// aapt resource value: 0x7f070017
+			public const int linearLayout22 = 2131165207;
 			
-			// aapt resource value: 0x7f06001d
-			public const int textView1 = 2131099677;
+			// aapt resource value: 0x7f070023
+			public const int linearLayout231 = 2131165219;
 			
-			// aapt resource value: 0x7f06000b
-			public const int textView12 = 2131099659;
+			// aapt resource value: 0x7f070029
+			public const int linearLayout241 = 2131165225;
 			
-			// aapt resource value: 0x7f060005
-			public const int textView2 = 2131099653;
+			// aapt resource value: 0x7f07001d
+			public const int linearLayout251 = 2131165213;
 			
-			// aapt resource value: 0x7f060016
-			public const int textView221 = 2131099670;
+			// aapt resource value: 0x7f07000a
+			public const int linearLayoutScroll = 2131165194;
 			
-			// aapt resource value: 0x7f060017
-			public const int textView222 = 2131099671;
+			// aapt resource value: 0x7f070054
+			public const int linearLogout = 2131165268;
 			
-			// aapt resource value: 0x7f060018
-			public const int textView223 = 2131099672;
+			// aapt resource value: 0x7f070042
+			public const int linearMenu3 = 2131165250;
 			
-			// aapt resource value: 0x7f060012
-			public const int textView23 = 2131099666;
+			// aapt resource value: 0x7f07004c
+			public const int linearMenu4 = 2131165260;
 			
-			// aapt resource value: 0x7f060010
-			public const int textView24 = 2131099664;
+			// aapt resource value: 0x7f070044
+			public const int linearMenuNot = 2131165252;
 			
-			// aapt resource value: 0x7f060011
-			public const int textView25 = 2131099665;
+			// aapt resource value: 0x7f07004a
+			public const int linearNews = 2131165258;
 			
-			// aapt resource value: 0x7f060022
-			public const int textView3 = 2131099682;
+			// aapt resource value: 0x7f07004e
+			public const int linearSettings = 2131165262;
 			
-			// aapt resource value: 0x7f060025
-			public const int textViewHome = 2131099685;
+			// aapt resource value: 0x7f070048
+			public const int linearWorks = 2131165256;
 			
-			// aapt resource value: 0x7f060001
-			public const int view1 = 2131099649;
+			// aapt resource value: 0x7f070031
+			public const int listView1 = 2131165233;
 			
-			// aapt resource value: 0x7f060007
-			public const int welcomeMessage = 2131099655;
+			// aapt resource value: 0x7f070006
+			public const int relativeLayout1 = 2131165190;
+			
+			// aapt resource value: 0x7f070009
+			public const int scrollView1 = 2131165193;
+			
+			// aapt resource value: 0x7f07000b
+			public const int tableLayout1 = 2131165195;
+			
+			// aapt resource value: 0x7f07000e
+			public const int tableLayout2 = 2131165198;
+			
+			// aapt resource value: 0x7f07000c
+			public const int tableRow1 = 2131165196;
+			
+			// aapt resource value: 0x7f07000f
+			public const int tableRow21 = 2131165199;
+			
+			// aapt resource value: 0x7f070015
+			public const int tableRow22 = 2131165205;
+			
+			// aapt resource value: 0x7f070021
+			public const int tableRow23 = 2131165217;
+			
+			// aapt resource value: 0x7f070027
+			public const int tableRow24 = 2131165223;
+			
+			// aapt resource value: 0x7f07001b
+			public const int tableRow25 = 2131165211;
+			
+			// aapt resource value: 0x7f070053
+			public const int textAboutus = 2131165267;
+			
+			// aapt resource value: 0x7f07004d
+			public const int textContactus = 2131165261;
+			
+			// aapt resource value: 0x7f070051
+			public const int textDisc = 2131165265;
+			
+			// aapt resource value: 0x7f070047
+			public const int textFault = 2131165255;
+			
+			// aapt resource value: 0x7f070055
+			public const int textLogout = 2131165269;
+			
+			// aapt resource value: 0x7f07004b
+			public const int textNews = 2131165259;
+			
+			// aapt resource value: 0x7f070045
+			public const int textNots = 2131165253;
+			
+			// aapt resource value: 0x7f070043
+			public const int textSelfService = 2131165251;
+			
+			// aapt resource value: 0x7f07004f
+			public const int textSettings = 2131165263;
+			
+			// aapt resource value: 0x7f07002d
+			public const int textView1 = 2131165229;
+			
+			// aapt resource value: 0x7f07000d
+			public const int textView12 = 2131165197;
+			
+			// aapt resource value: 0x7f070005
+			public const int textView2 = 2131165189;
+			
+			// aapt resource value: 0x7f070018
+			public const int textView221 = 2131165208;
+			
+			// aapt resource value: 0x7f07001a
+			public const int textView222 = 2131165210;
+			
+			// aapt resource value: 0x7f070026
+			public const int textView231 = 2131165222;
+			
+			// aapt resource value: 0x7f070024
+			public const int textView232 = 2131165220;
+			
+			// aapt resource value: 0x7f070012
+			public const int textView24 = 2131165202;
+			
+			// aapt resource value: 0x7f07002c
+			public const int textView241 = 2131165228;
+			
+			// aapt resource value: 0x7f07002a
+			public const int textView242 = 2131165226;
+			
+			// aapt resource value: 0x7f070014
+			public const int textView25 = 2131165204;
+			
+			// aapt resource value: 0x7f07001e
+			public const int textView251 = 2131165214;
+			
+			// aapt resource value: 0x7f070020
+			public const int textView252 = 2131165216;
+			
+			// aapt resource value: 0x7f07002e
+			public const int textView3 = 2131165230;
+			
+			// aapt resource value: 0x7f070032
+			public const int textView4 = 2131165234;
+			
+			// aapt resource value: 0x7f07002f
+			public const int textView7 = 2131165231;
+			
+			// aapt resource value: 0x7f070041
+			public const int textViewHome = 2131165249;
+			
+			// aapt resource value: 0x7f070049
+			public const int textWorks = 2131165257;
+			
+			// aapt resource value: 0x7f070001
+			public const int view1 = 2131165185;
+			
+			// aapt resource value: 0x7f070013
+			public const int viewSep1 = 2131165203;
+			
+			// aapt resource value: 0x7f070019
+			public const int viewSep2 = 2131165209;
+			
+			// aapt resource value: 0x7f070025
+			public const int viewSep3 = 2131165221;
+			
+			// aapt resource value: 0x7f07002b
+			public const int viewSep4 = 2131165227;
+			
+			// aapt resource value: 0x7f07001f
+			public const int viewSep5 = 2131165215;
+			
+			// aapt resource value: 0x7f070033
+			public const int webView1 = 2131165235;
+			
+			// aapt resource value: 0x7f070007
+			public const int welcomeMessage = 2131165191;
 			
 			static Id()
 			{
@@ -230,25 +390,46 @@ namespace RedBinkieResearchLabs
 			public const int ContentLayoutContact = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int ContentLayoutSS = 2130903042;
+			public const int ContentLayoutDisclaimer = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int layoutContactUs = 2130903043;
+			public const int ContentLayoutFault = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int layoutSelfService = 2130903044;
+			public const int ContentLayoutSS = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int login = 2130903045;
+			public const int ContentLayoutWorks = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int Main = 2130903046;
+			public const int layoutContactUs = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int MenuLayout = 2130903047;
+			public const int layoutDisclaimer = 2130903047;
 			
 			// aapt resource value: 0x7f030008
-			public const int testLayout = 2130903048;
+			public const int layoutFault = 2130903048;
+			
+			// aapt resource value: 0x7f030009
+			public const int layoutSelfService = 2130903049;
+			
+			// aapt resource value: 0x7f03000a
+			public const int layoutWorks = 2130903050;
+			
+			// aapt resource value: 0x7f03000b
+			public const int listFaultStatus = 2130903051;
+			
+			// aapt resource value: 0x7f03000c
+			public const int login = 2130903052;
+			
+			// aapt resource value: 0x7f03000d
+			public const int Main = 2130903053;
+			
+			// aapt resource value: 0x7f03000e
+			public const int MenuLayout = 2130903054;
+			
+			// aapt resource value: 0x7f03000f
+			public const int testLayout = 2130903055;
 			
 			static Layout()
 			{
@@ -269,6 +450,9 @@ namespace RedBinkieResearchLabs
 			// aapt resource value: 0x7f040000
 			public const int Hello = 2130968576;
 			
+			// aapt resource value: 0x7f040002
+			public const int faultFilter = 2130968578;
+			
 			static String()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -282,8 +466,8 @@ namespace RedBinkieResearchLabs
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int Mono_Android_Theme_Splash = 2131034112;
+			// aapt resource value: 0x7f060000
+			public const int Mono_Android_Theme_Splash = 2131099648;
 			
 			static Style()
 			{

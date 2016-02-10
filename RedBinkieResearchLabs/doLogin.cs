@@ -14,10 +14,11 @@ using Android.Graphics;
 
 namespace RedBinkieResearchLabs
 {
-    [Activity(MainLauncher = true, Icon = "@drawable/icon", Theme = "@android:style/Theme.NoTitleBar")]
+    [Activity(Label = "Flow", MainLauncher = true, Icon = "@drawable/icon", Theme = "@android:style/Theme.NoTitleBar")]
 
     public class doLogin : Activity
     {
+
         clsAuth oAuth = new clsAuth();
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -27,7 +28,15 @@ namespace RedBinkieResearchLabs
             // Set our view from the "login" layout resource
             SetContentView(Resource.Layout.login);
 
-            // Get our button from the layout resource,
+            //get the link at the bottom and attach an event to it
+            TextView lnkWW = FindViewById<TextView>(Resource.Id.textView3);
+            lnkWW.Click += delegate {
+                var uriWW = Android.Net.Uri.Parse("https://www.wessexwater.co.uk");
+                var intenWW = new Intent(Intent.ActionView, uriWW);
+                StartActivity(intenWW);
+            };
+
+            // Get our login button from the layout resource,
             // and attach an event to it
             Button button = FindViewById<Button>(Resource.Id.button1);
 

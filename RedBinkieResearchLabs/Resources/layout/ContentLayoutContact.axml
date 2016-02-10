@@ -17,7 +17,7 @@
         android:background="#ffd00000">
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/linearLayout1">
             <View
@@ -37,127 +37,305 @@
                 android:layout_marginLeft="8dp" />
         </LinearLayout>
     </FrameLayout>
-    <TableLayout
-        android:minWidth="25px"
-        android:minHeight="25px"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tableLayout1">
-        <TableRow
-            android:id="@+id/tableRow1"
-            android:background="@android:color/holo_blue_dark"
-            android:layout_height="65.0dp"
-            android:layout_width="fill_parent">
-            <ImageView
-                android:src="@android:drawable/ic_dialog_info"
-                android:layout_width="match_parent"
-                android:layout_column="0"
-                android:id="@+id/imageView1"
-                android:layout_gravity="center"
-                android:layout_marginLeft="5dp" />
-            <TextView
-                android:text="Contact us via our customer service channels"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_column="2"
-                android:id="@+id/textView12"
-                android:layout_width="wrap_content"
-                android:layout_gravity="center"
-                android:layout_height="65.0dp"
-                android:textAlignment="center"
-                android:layout_marginTop="5dp"
-                android:maxLines="3"
-                android:scrollHorizontally="false"
-                android:ellipsize="none"
-                android:layout_weight="1" />
-        </TableRow>
-    </TableLayout>
-    <TableLayout
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tableLayout2">
-        <TableRow
-            android:id="@+id/tableRow21"
-            android:layout_height="70.0dp"
-            android:layout_width="wrap_content">
-            <ImageView
-                android:src="@drawable/facebook"
-                android:layout_column="0"
-                android:id="@+id/imageView21"
-                android:layout_gravity="center"
-                android:layout_marginLeft="5dp"
-                android:layout_height="50dp"
-                android:layout_width="50dp" />
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_column="2"
-                android:id="@+id/linearLayout2"
-                android:layout_width="fill_parent"
-                android:layout_height="75dp"
-                android:layout_marginTop="5dp">
-                <TextView
-                    android:text="Facebook"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView24" />
-                <TextView
-                    android:text="Visit our facebook page"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView25" />
-            </LinearLayout>
-            <TextView
-                android:text="&gt;"
+        android:id="@+id/scrollView1"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical"
+        android:scrollIndicators="bottom">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayoutScroll">
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_column="3"
-                android:id="@+id/textView23"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_gravity="center" />
-        </TableRow>
-        <TableRow
-            android:id="@+id/tableRow22"
-            android:layout_height="65.0dp"
-            android:layout_width="wrap_content">
-            <ImageView
-                android:src="@drawable/Twitter"
-                android:layout_column="0"
-                android:id="@+id/imageView22"
-                android:layout_gravity="center"
-                android:layout_marginLeft="5dp"
-                android:layout_height="50dp"
-                android:layout_width="50dp" />
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_column="2"
-                android:id="@+id/linearLayout22"
-                android:layout_width="296.0dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="5dp">
-                <TextView
-                    android:text="Twitter"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView221" />
-                <TextView
-                    android:text="Follow us on Twitter"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView222" />
-            </LinearLayout>
-            <TextView
-                android:text="&gt;"
+                android:id="@+id/tableLayout1">
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:background="@android:color/holo_blue_dark"
+                    android:layout_height="65.0dp"
+                    android:layout_width="fill_parent">
+                    <ImageView
+                        android:src="@android:drawable/ic_dialog_info"
+                        android:layout_width="50dp"
+                        android:layout_column="0"
+                        android:id="@+id/imageView1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center" />
+                    <TextView
+                        android:text="Contact us via our customer service channels"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/textView12"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:maxLines="3"
+                        android:scrollHorizontally="false"
+                        android:ellipsize="none"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_column="3"
-                android:id="@+id/textView223"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_gravity="center" />
-        </TableRow>
-    </TableLayout>
+                android:id="@+id/tableLayout2">
+                <TableRow
+                    android:id="@+id/tableRow21"
+                    android:layout_height="60.0dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+                    <ImageView
+                        android:src="@drawable/facebook"
+                        android:layout_column="0"
+                        android:id="@+id/imageView21"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="50dp"
+                        android:layout_width="50dp"
+                        android:layout_gravity="center" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_column="1"
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:text="Facebook"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView24"
+                            android:ellipsize="none" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:id="@+id/viewSep1"
+                            android:background="#ffc1c1c1" />
+                        <TextView
+                            android:text="Visit our facebook page"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView25"
+                            android:ellipsize="none" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow22"
+                    android:layout_height="60.0dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+                    <ImageView
+                        android:src="@drawable/Twitter"
+                        android:layout_column="0"
+                        android:id="@+id/imageView22"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="50dp"
+                        android:layout_width="50dp" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_column="1"
+                        android:id="@+id/linearLayout22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:text="Twitter"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView221" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:id="@+id/viewSep2"
+                            android:background="#ffc1c1c1" />
+                        <TextView
+                            android:text="Follow us on Twitter"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView222" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow25"
+                    android:layout_height="60.0dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+                    <ImageView
+                        android:src="@drawable/youtube"
+                        android:layout_column="0"
+                        android:id="@+id/imageView251"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="50dp"
+                        android:layout_width="50dp" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_column="1"
+                        android:id="@+id/linearLayout251"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:text="Youtube"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView251" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:id="@+id/viewSep5"
+                            android:background="#ffc1c1c1" />
+                        <TextView
+                            android:text="View our videos"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView252" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow23"
+                    android:layout_height="60.0dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+                    <ImageView
+                        android:src="@drawable/helpdesk"
+                        android:layout_column="0"
+                        android:id="@+id/imageView231"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="50dp"
+                        android:layout_width="50dp" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_column="1"
+                        android:id="@+id/linearLayout231"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:text="Call 0345 600 3 600"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView232" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:id="@+id/viewSep3"
+                            android:background="#ffc1c1c1" />
+                        <TextView
+                            android:text="Bills and accounts"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView231" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow24"
+                    android:layout_height="60.0dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+                    <ImageView
+                        android:src="@drawable/phone"
+                        android:layout_column="0"
+                        android:id="@+id/imageView241"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="50dp"
+                        android:layout_width="50dp" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_column="1"
+                        android:id="@+id/linearLayout241"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:text="Call 0345 600 4 600"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView242" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:id="@+id/viewSep4"
+                            android:background="#ffc1c1c1" />
+                        <TextView
+                            android:text="Water supply and sewerage"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView241" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow25"
+                    android:layout_height="60.0dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+                    <ImageView
+                        android:src="@drawable/chat"
+                        android:layout_column="0"
+                        android:id="@+id/imageView251"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="50dp"
+                        android:layout_width="50dp" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_column="1"
+                        android:id="@+id/linearLayout251"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:text="Live chat"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView252" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:id="@+id/viewSep5"
+                            android:background="#ffc1c1c1" />
+                        <TextView
+                            android:text="Online help"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView251" />
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

@@ -2,4 +2,11 @@
 <resources>
     <string name="Hello">Hello World, Click Me!</string>
     <string name="ApplicationName">RedBinkieResearchLabs</string>
+    <string name="faultFilter">Select a filter</string>
+    <string-array name="faultFilterArray">
+      <item>All</item>
+      <item>Open</item>
+      <item>Resolved</item>
+      <item>Closed</item>
+    </string-array>
 </resources>

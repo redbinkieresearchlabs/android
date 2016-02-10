@@ -13,18 +13,18 @@ using Android.Widget;
 namespace RedBinkieResearchLabs
 {
     [Activity(Theme = "@android:style/Theme.NoTitleBar")]
-    public class SelfServiceActivity : Activity
+    public class activityDisclaimer : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             // Create your application here
-            SetContentView(Resource.Layout.layoutSelfService);
+            SetContentView(Resource.Layout.layoutDisclaimer);
 
             //build the menu
             clsMenu menu = new clsMenu(this);
-            menu.buildMenuIndividual(3);
+            menu.buildMenuIndividual(10);
             menu.buildMenu();
         }
     }

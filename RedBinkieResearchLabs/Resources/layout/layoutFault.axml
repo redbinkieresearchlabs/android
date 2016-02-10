@@ -4,12 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <RedBinkieResearchLabs.FlyOutContainer
-        android:id="@+id/FlyOutContainerContact"
+        android:id="@+id/FlyOutContainerFault"
         android:layout_width="match_parent"
         android:layout_height="fill_parent">
         <include
             layout="@layout/MenuLayout" />
         <include
-            layout="@layout/ContentLayoutContact" />
+            layout="@layout/ContentLayoutFault" />
     </RedBinkieResearchLabs.FlyOutContainer>
 </LinearLayout>

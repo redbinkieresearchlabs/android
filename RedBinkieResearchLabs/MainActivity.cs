@@ -23,11 +23,11 @@ namespace RedBinkieResearchLabs
             SetContentView(Resource.Layout.Main);
 
             TextView messageText = FindViewById<TextView>(Resource.Id.welcomeMessage);
-            messageText.Text = "Welcome " + sharedPref.GetPreference(Application.Context,"uname","");
+            messageText.Text = "Hello Asrar Makrani";// + sharedPref.GetPreference(Application.Context,"uname","");
 
             //build the menu
             clsMenu menu = new clsMenu(this);
-            menu.buildMenuMain();
+            menu.buildMenuIndividual(0);
             menu.buildMenu();
         }
     }
