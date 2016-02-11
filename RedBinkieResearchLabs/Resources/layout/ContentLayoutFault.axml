@@ -51,57 +51,78 @@
             </RelativeLayout>
         </LinearLayout>
     </FrameLayout>
-    <ScrollView
+    <TextView
+        android:text="Tap on + to log a fault"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/scrollView1"
-        android:scrollbarStyle="insideOverlay"
-        android:scrollbars="vertical"
-        android:scrollIndicators="bottom">
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/linearLayoutScroll">
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" />
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_margin="10dp">
             <TextView
-                android:text="These are faults logged by you"
+                android:text="Select a filter"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView3"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp" />
-            <TableLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/tableLayout1"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp">
-                <TableRow
-                    android:id="@+id/tableRow1">
-                    <TextView
-                        android:text="Select a filter"
-                        android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:layout_column="0"
-                        android:id="@+id/textView7" />
-                    <Spinner
-                        android:id="@+id/filterFaultStatus"
-                        android:layout_column="2" />
-                </TableRow>
-            </TableLayout>
-            <ListView
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:id="@+id/listView1" />
-            <TextView
-                android:text="Tap on + to log a fault"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView4"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="5dp" />
-        </LinearLayout>
-    </ScrollView>
+                android:layout_column="0"
+                android:id="@+id/textView7" />
+            <Spinner
+                android:id="@+id/filterFaultStatus"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center" />
+        </TableRow>
+    </TableLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:id="@+id/viewSepTop"
+        android:background="#ffc1c1c1" />
+    <LinearLayout
+        android:id="@+id/relativeLayoutHeader"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/FirstText"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:layout_marginRight="0.0dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:id="@+id/SecondText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:id="@+id/ThirdText"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:id="@+id/viewSepMiddle"
+        android:background="#ffc1c1c1" />
+    <ListView xmlns:tools="http://schemas.android.com/tools"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listView1"
+        android:layout_margin="10dp" />
 </LinearLayout>

@@ -51,9 +51,11 @@
   <ItemGroup>
     <Compile Include="activityContactUs.cs" />
     <Compile Include="activityDisclaimer.cs" />
+    <Compile Include="activityFaultDetail.cs" />
     <Compile Include="activityLogFault.cs" />
     <Compile Include="activityWorks.cs" />
     <Compile Include="Classes\clsAuth.cs" />
+    <Compile Include="Classes\clsListViewAdapter.cs" />
     <Compile Include="Classes\clsMenu.cs" />
     <Compile Include="doLogin.cs" />
     <Compile Include="Classes\FlyOutContainer.cs" />
@@ -87,9 +89,6 @@
     <AndroidResource Include="Resources\layout\ContentLayoutContact.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\testLayout.axml">
-      <SubType>AndroidResource</SubType>
-    </AndroidResource>
     <AndroidResource Include="Resources\layout\layoutDisclaimer.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
@@ -108,7 +107,13 @@
     <AndroidResource Include="Resources\layout\ContentLayoutFault.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\listFaultStatus.axml">
+    <AndroidResource Include="Resources\layout\listFaultTemplate.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ContentLayoutFaultDetail.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\layoutFaultDetail.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -156,6 +161,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\helpdesk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fivestar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

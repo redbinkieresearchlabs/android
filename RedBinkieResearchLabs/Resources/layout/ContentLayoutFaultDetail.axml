@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/FlyOutContent"
+    android:background="@android:color/background_light">
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view1"
+        android:background="#ffff0000" />
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayout1"
+        android:background="#ffd00000">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1">
+            <View
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/MenuButton"
+                android:layout_margin="4dp"
+                android:background="@drawable/action_menu" />
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/relativeLayout1">
+                <TextView
+                    android:text="Fault details"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/textView2"
+                    android:gravity="center"
+                    android:textColor="#fff6f6f6"
+                    android:layout_marginLeft="8dp"
+                    android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout1"
+        android:layout_margin="5dp">
+        <TableRow
+            android:id="@+id/tableRow1">
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:text="Reference ID"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="0"
+                android:id="@+id/textView12"
+                android:textColor="@android:color/background_dark" />
+            <TextView
+                android:text="Text"
+                android:id="@+id/textViewParse"
+                android:textColor="@android:color/background_dark"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:layout_width="match_parent" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_column="0"
+                android:id="@+id/textView13"
+                android:textColor="@android:color/background_dark" />
+            <EditText
+                android:inputType="textMultiLine"
+                android:layout_column="2"
+                android:id="@+id/editText1"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="asdsadasdasd asdasdasd asdasd"
+                android:textColor="@android:color/background_dark"
+                android:editable="false" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:text="Status"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_column="0"
+                android:id="@+id/textView25"
+                android:textColor="@android:color/background_dark" />
+            <TextView
+                android:text="Open"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_column="2"
+                android:id="@+id/textView26"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:textColor="@android:color/background_dark" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:text="Rating"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_column="0"
+                android:id="@+id/textView27"
+                android:textColor="@android:color/background_dark" />
+            <ImageView
+                android:src="@drawable/fivestar"
+                android:layout_column="2"
+                android:id="@+id/imageViewRating"
+                android:layout_weight="1"
+                android:layout_width="100dp"
+                android:layout_gravity="left"
+                android:layout_height="20dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:text="Image"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_column="0"
+                android:id="@+id/textView39"
+                android:textColor="@android:color/background_dark" />
+            <ImageView
+                android:src="@drawable/twitter"
+                android:layout_column="2"
+                android:id="@+id/imageViewUploadedImage"
+                android:layout_weight="1"
+                android:layout_width="200dp"
+                android:layout_gravity="left"
+                android:layout_height="200dp" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

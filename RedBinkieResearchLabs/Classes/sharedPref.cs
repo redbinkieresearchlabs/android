@@ -29,4 +29,16 @@ namespace RedBinkieResearchLabs
             return value;
         }
     }
+
+    public class listviewModelFault
+    {
+        public int colNo { get; set; }
+        public string colFault { get; set; }
+        public string colStatus { get; set; }
+
+        public override string ToString()
+        {
+            return this.colFault;
+        }
+    }
 }
