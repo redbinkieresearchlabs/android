@@ -97,10 +97,13 @@ namespace RedBinkieResearchLabs
 			public const int phone = 2130837515;
 			
 			// aapt resource value: 0x7f02000c
-			public const int Twitter = 2130837516;
+			public const int Placeholder = 2130837516;
 			
 			// aapt resource value: 0x7f02000d
-			public const int Youtube = 2130837517;
+			public const int Twitter = 2130837517;
+			
+			// aapt resource value: 0x7f02000e
+			public const int Youtube = 2130837518;
 			
 			static Drawable()
 			{
@@ -115,65 +118,98 @@ namespace RedBinkieResearchLabs
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f070033
-			public const int FirstText = 2131165235;
+			// aapt resource value: 0x7f07003e
+			public const int Description = 2131165246;
 			
-			// aapt resource value: 0x7f070051
-			public const int FlyOutContainer = 2131165265;
+			// aapt resource value: 0x7f070035
+			public const int FeaturedImg = 2131165237;
 			
-			// aapt resource value: 0x7f070046
-			public const int FlyOutContainerContact = 2131165254;
+			// aapt resource value: 0x7f07003a
+			public const int FeedContent = 2131165242;
 			
-			// aapt resource value: 0x7f070047
-			public const int FlyOutContainerDisclaimer = 2131165255;
+			// aapt resource value: 0x7f070038
+			public const int FeedDate = 2131165240;
 			
-			// aapt resource value: 0x7f070048
-			public const int FlyOutContainerFault = 2131165256;
+			// aapt resource value: 0x7f070039
+			public const int FeedStatus = 2131165241;
 			
-			// aapt resource value: 0x7f070049
-			public const int FlyOutContainerSS = 2131165257;
+			// aapt resource value: 0x7f070036
+			public const int FeedTitle = 2131165238;
 			
-			// aapt resource value: 0x7f07004a
-			public const int FlyOutContainerWorks = 2131165258;
+			// aapt resource value: 0x7f070037
+			public const int FeedType = 2131165239;
+			
+			// aapt resource value: 0x7f070045
+			public const int FirstText = 2131165253;
+			
+			// aapt resource value: 0x7f07004f
+			public const int FlyOutContainer = 2131165263;
+			
+			// aapt resource value: 0x7f070040
+			public const int FlyOutContainerContact = 2131165248;
+			
+			// aapt resource value: 0x7f070041
+			public const int FlyOutContainerDisclaimer = 2131165249;
+			
+			// aapt resource value: 0x7f070042
+			public const int FlyOutContainerFault = 2131165250;
+			
+			// aapt resource value: 0x7f070043
+			public const int FlyOutContainerSS = 2131165251;
+			
+			// aapt resource value: 0x7f070044
+			public const int FlyOutContainerWorks = 2131165252;
 			
 			// aapt resource value: 0x7f070000
 			public const int FlyOutContent = 2131165184;
 			
-			// aapt resource value: 0x7f070052
-			public const int FlyOutMenu = 2131165266;
+			// aapt resource value: 0x7f070050
+			public const int FlyOutMenu = 2131165264;
 			
 			// aapt resource value: 0x7f070004
 			public const int MenuButton = 2131165188;
 			
-			// aapt resource value: 0x7f070034
-			public const int SecondText = 2131165236;
+			// aapt resource value: 0x7f070046
+			public const int SecondText = 2131165254;
 			
-			// aapt resource value: 0x7f070035
-			public const int ThirdText = 2131165237;
+			// aapt resource value: 0x7f07003f
+			public const int Status = 2131165247;
 			
-			// aapt resource value: 0x7f07004f
-			public const int button1 = 2131165263;
-			
-			// aapt resource value: 0x7f07004e
-			public const int checkBox1 = 2131165262;
+			// aapt resource value: 0x7f070047
+			public const int ThirdText = 2131165255;
 			
 			// aapt resource value: 0x7f07003c
-			public const int editText1 = 2131165244;
+			public const int Thumbnail = 2131165244;
+			
+			// aapt resource value: 0x7f07003d
+			public const int Title = 2131165245;
+			
+			// aapt resource value: 0x7f07002e
+			public const int btnAddFault = 2131165230;
 			
 			// aapt resource value: 0x7f07004d
-			public const int editText2 = 2131165261;
+			public const int button1 = 2131165261;
 			
 			// aapt resource value: 0x7f07004c
-			public const int errText = 2131165260;
+			public const int checkBox1 = 2131165260;
 			
-			// aapt resource value: 0x7f070030
-			public const int filterFaultStatus = 2131165232;
+			// aapt resource value: 0x7f07004a
+			public const int editText1 = 2131165258;
+			
+			// aapt resource value: 0x7f07004b
+			public const int editText2 = 2131165259;
+			
+			// aapt resource value: 0x7f070049
+			public const int errText = 2131165257;
+			
+			// aapt resource value: 0x7f070032
+			public const int filterFaultStatus = 2131165234;
 			
 			// aapt resource value: 0x7f070002
 			public const int frameLayout1 = 2131165186;
 			
-			// aapt resource value: 0x7f07004b
-			public const int imageButton1 = 2131165259;
+			// aapt resource value: 0x7f070048
+			public const int imageButton1 = 2131165256;
 			
 			// aapt resource value: 0x7f070008
 			public const int imageView1 = 2131165192;
@@ -193,20 +229,14 @@ namespace RedBinkieResearchLabs
 			// aapt resource value: 0x7f07001c
 			public const int imageView251 = 2131165212;
 			
-			// aapt resource value: 0x7f070041
-			public const int imageViewRating = 2131165249;
-			
-			// aapt resource value: 0x7f070044
-			public const int imageViewUploadedImage = 2131165252;
-			
-			// aapt resource value: 0x7f070064
-			public const int linearAbout = 2131165284;
-			
 			// aapt resource value: 0x7f070062
-			public const int linearDisc = 2131165282;
+			public const int linearAbout = 2131165282;
 			
-			// aapt resource value: 0x7f070058
-			public const int linearFault = 2131165272;
+			// aapt resource value: 0x7f070060
+			public const int linearDisc = 2131165280;
+			
+			// aapt resource value: 0x7f070056
+			public const int linearFault = 2131165270;
 			
 			// aapt resource value: 0x7f070003
 			public const int linearLayout1 = 2131165187;
@@ -229,35 +259,35 @@ namespace RedBinkieResearchLabs
 			// aapt resource value: 0x7f07000a
 			public const int linearLayoutScroll = 2131165194;
 			
-			// aapt resource value: 0x7f070066
-			public const int linearLogout = 2131165286;
+			// aapt resource value: 0x7f070064
+			public const int linearLogout = 2131165284;
 			
-			// aapt resource value: 0x7f070054
-			public const int linearMenu3 = 2131165268;
-			
-			// aapt resource value: 0x7f07005e
-			public const int linearMenu4 = 2131165278;
-			
-			// aapt resource value: 0x7f070056
-			public const int linearMenuNot = 2131165270;
+			// aapt resource value: 0x7f070052
+			public const int linearMenu3 = 2131165266;
 			
 			// aapt resource value: 0x7f07005c
-			public const int linearNews = 2131165276;
+			public const int linearMenu4 = 2131165276;
 			
-			// aapt resource value: 0x7f070060
-			public const int linearSettings = 2131165280;
+			// aapt resource value: 0x7f070054
+			public const int linearMenuNot = 2131165268;
 			
 			// aapt resource value: 0x7f07005a
-			public const int linearWorks = 2131165274;
+			public const int linearNews = 2131165274;
 			
-			// aapt resource value: 0x7f070037
-			public const int listView1 = 2131165239;
+			// aapt resource value: 0x7f07005e
+			public const int linearSettings = 2131165278;
+			
+			// aapt resource value: 0x7f070058
+			public const int linearWorks = 2131165272;
+			
+			// aapt resource value: 0x7f070034
+			public const int listView1 = 2131165236;
+			
+			// aapt resource value: 0x7f070033
+			public const int progressBar1 = 2131165235;
 			
 			// aapt resource value: 0x7f070006
 			public const int relativeLayout1 = 2131165190;
-			
-			// aapt resource value: 0x7f070032
-			public const int relativeLayoutHeader = 2131165234;
 			
 			// aapt resource value: 0x7f070009
 			public const int scrollView1 = 2131165193;
@@ -271,8 +301,8 @@ namespace RedBinkieResearchLabs
 			// aapt resource value: 0x7f07000c
 			public const int tableRow1 = 2131165196;
 			
-			// aapt resource value: 0x7f070038
-			public const int tableRow2 = 2131165240;
+			// aapt resource value: 0x7f070030
+			public const int tableRow2 = 2131165232;
 			
 			// aapt resource value: 0x7f07000f
 			public const int tableRow21 = 2131165199;
@@ -289,53 +319,38 @@ namespace RedBinkieResearchLabs
 			// aapt resource value: 0x7f07001b
 			public const int tableRow25 = 2131165211;
 			
-			// aapt resource value: 0x7f07003a
-			public const int tableRow3 = 2131165242;
-			
-			// aapt resource value: 0x7f07003d
-			public const int tableRow4 = 2131165245;
-			
-			// aapt resource value: 0x7f07003f
-			public const int tableRow5 = 2131165247;
-			
-			// aapt resource value: 0x7f070042
-			public const int tableRow6 = 2131165250;
-			
-			// aapt resource value: 0x7f070065
-			public const int textAboutus = 2131165285;
-			
-			// aapt resource value: 0x7f07005f
-			public const int textContactus = 2131165279;
-			
 			// aapt resource value: 0x7f070063
-			public const int textDisc = 2131165283;
-			
-			// aapt resource value: 0x7f070059
-			public const int textFault = 2131165273;
-			
-			// aapt resource value: 0x7f070067
-			public const int textLogout = 2131165287;
+			public const int textAboutus = 2131165283;
 			
 			// aapt resource value: 0x7f07005d
-			public const int textNews = 2131165277;
-			
-			// aapt resource value: 0x7f070057
-			public const int textNots = 2131165271;
-			
-			// aapt resource value: 0x7f070055
-			public const int textSelfService = 2131165269;
+			public const int textContactus = 2131165277;
 			
 			// aapt resource value: 0x7f070061
-			public const int textSettings = 2131165281;
+			public const int textDisc = 2131165281;
+			
+			// aapt resource value: 0x7f070057
+			public const int textFault = 2131165271;
+			
+			// aapt resource value: 0x7f070065
+			public const int textLogout = 2131165285;
+			
+			// aapt resource value: 0x7f07005b
+			public const int textNews = 2131165275;
+			
+			// aapt resource value: 0x7f070055
+			public const int textNots = 2131165269;
+			
+			// aapt resource value: 0x7f070053
+			public const int textSelfService = 2131165267;
+			
+			// aapt resource value: 0x7f07005f
+			public const int textSettings = 2131165279;
 			
 			// aapt resource value: 0x7f07002d
 			public const int textView1 = 2131165229;
 			
 			// aapt resource value: 0x7f07000d
 			public const int textView12 = 2131165197;
-			
-			// aapt resource value: 0x7f07003b
-			public const int textView13 = 2131165243;
 			
 			// aapt resource value: 0x7f070005
 			public const int textView2 = 2131165189;
@@ -370,32 +385,20 @@ namespace RedBinkieResearchLabs
 			// aapt resource value: 0x7f070020
 			public const int textView252 = 2131165216;
 			
-			// aapt resource value: 0x7f07003e
-			public const int textView26 = 2131165246;
-			
-			// aapt resource value: 0x7f070040
-			public const int textView27 = 2131165248;
-			
-			// aapt resource value: 0x7f070050
-			public const int textView3 = 2131165264;
-			
-			// aapt resource value: 0x7f070043
-			public const int textView39 = 2131165251;
-			
-			// aapt resource value: 0x7f07002e
-			public const int textView4 = 2131165230;
+			// aapt resource value: 0x7f07004e
+			public const int textView3 = 2131165262;
 			
 			// aapt resource value: 0x7f07002f
-			public const int textView7 = 2131165231;
+			public const int textView4 = 2131165231;
 			
-			// aapt resource value: 0x7f070053
-			public const int textViewHome = 2131165267;
+			// aapt resource value: 0x7f070031
+			public const int textView7 = 2131165233;
 			
-			// aapt resource value: 0x7f070039
-			public const int textViewParse = 2131165241;
+			// aapt resource value: 0x7f070051
+			public const int textViewHome = 2131165265;
 			
-			// aapt resource value: 0x7f07005b
-			public const int textWorks = 2131165275;
+			// aapt resource value: 0x7f070059
+			public const int textWorks = 2131165273;
 			
 			// aapt resource value: 0x7f070001
 			public const int view1 = 2131165185;
@@ -415,14 +418,8 @@ namespace RedBinkieResearchLabs
 			// aapt resource value: 0x7f07001f
 			public const int viewSep5 = 2131165215;
 			
-			// aapt resource value: 0x7f070036
-			public const int viewSepMiddle = 2131165238;
-			
-			// aapt resource value: 0x7f070031
-			public const int viewSepTop = 2131165233;
-			
-			// aapt resource value: 0x7f070045
-			public const int webView1 = 2131165253;
+			// aapt resource value: 0x7f07003b
+			public const int webView1 = 2131165243;
 			
 			// aapt resource value: 0x7f070007
 			public const int welcomeMessage = 2131165191;
@@ -456,40 +453,46 @@ namespace RedBinkieResearchLabs
 			public const int ContentLayoutFaultDetail = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int ContentLayoutSS = 2130903045;
+			public const int ContentLayoutFaultEdit = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int ContentLayoutWorks = 2130903046;
+			public const int ContentLayoutSS = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int layoutContactUs = 2130903047;
+			public const int ContentLayoutWorks = 2130903047;
 			
 			// aapt resource value: 0x7f030008
-			public const int layoutDisclaimer = 2130903048;
+			public const int FaultListLayout = 2130903048;
 			
 			// aapt resource value: 0x7f030009
-			public const int layoutFault = 2130903049;
+			public const int layoutContactUs = 2130903049;
 			
 			// aapt resource value: 0x7f03000a
-			public const int layoutFaultDetail = 2130903050;
+			public const int layoutDisclaimer = 2130903050;
 			
 			// aapt resource value: 0x7f03000b
-			public const int layoutSelfService = 2130903051;
+			public const int layoutFault = 2130903051;
 			
 			// aapt resource value: 0x7f03000c
-			public const int layoutWorks = 2130903052;
+			public const int layoutFaultDetail = 2130903052;
 			
 			// aapt resource value: 0x7f03000d
-			public const int listFaultTemplate = 2130903053;
+			public const int layoutSelfService = 2130903053;
 			
 			// aapt resource value: 0x7f03000e
-			public const int login = 2130903054;
+			public const int layoutWorks = 2130903054;
 			
 			// aapt resource value: 0x7f03000f
-			public const int Main = 2130903055;
+			public const int listFaultTemplate = 2130903055;
 			
 			// aapt resource value: 0x7f030010
-			public const int MenuLayout = 2130903056;
+			public const int login = 2130903056;
+			
+			// aapt resource value: 0x7f030011
+			public const int Main = 2130903057;
+			
+			// aapt resource value: 0x7f030012
+			public const int MenuLayout = 2130903058;
 			
 			static Layout()
 			{
@@ -509,6 +512,9 @@ namespace RedBinkieResearchLabs
 			
 			// aapt resource value: 0x7f040000
 			public const int Hello = 2130968576;
+			
+			// aapt resource value: 0x7f040003
+			public const int disclaimer = 2130968579;
 			
 			// aapt resource value: 0x7f040002
 			public const int faultFilter = 2130968578;

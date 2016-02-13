@@ -4,7 +4,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:id="@+id/FlyOutContent"
-    android:background="@android:color/darker_gray">
+    android:background="@android:color/background_light">
     <View
         android:layout_width="fill_parent"
         android:layout_height="1dp"
@@ -45,14 +45,15 @@
         android:id="@+id/scrollView1"
         android:scrollbarStyle="insideOverlay"
         android:scrollbars="vertical"
-        android:scrollIndicators="bottom">
+        android:scrollIndicators="bottom"
+        android:layout_margin="5dp">
         <TextView
-            android:text="This text is inside a scroll view \n and this is a second line"
-            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/disclaimer"
+            android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/textView1"
-            android:maxLines="100"
-            android:lines="300" />
+            android:padding="5dp"
+            android:textColor="@android:color/holo_blue_dark" />
     </ScrollView>
 </LinearLayout>

@@ -12,25 +12,13 @@
             android:layout_height="200dp"
             android:src="@drawable/Placeholder"
             android:scaleType="centerCrop" />
-        <TextView
-            android:id="@+id/FeedTitle"
-            android:layout_width="wrap_content"
+        <EditText
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ellipsize="end"
-            android:lineSpacingExtra="3dp"
-            android:maxLines="2"
-            android:padding="10dp"
-            android:text="Title"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
-            android:textColor="#fff"
-            android:textStyle="bold" />
-        <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/FeedTitle" />
+        <EditText
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:text="Type"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
-            android:textColor="#fff"
             android:id="@+id/FeedType" />
         <TextView
             android:layout_width="wrap_content"
@@ -39,7 +27,8 @@
             android:text="Date"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault"
             android:textColor="#fff"
-            android:id="@+id/FeedDate" />
+            android:id="@+id/FeedDate"
+            android:visibility="gone" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -47,14 +36,12 @@
             android:text="Status"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault"
             android:textColor="#fff"
-            android:id="@+id/FeedStatus" />
-        <TextView
-            android:id="@+id/FeedContent"
-            android:layout_width="wrap_content"
+            android:id="@+id/FeedStatus"
+            android:visibility="gone" />
+        <EditText
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:text="desc"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
-            android:textColor="#fff" />
+            android:id="@+id/FeedContent" />
     </LinearLayout>
 </ScrollView>
