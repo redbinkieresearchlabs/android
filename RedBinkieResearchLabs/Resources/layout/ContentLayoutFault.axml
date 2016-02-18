@@ -5,52 +5,8 @@
     android:layout_height="fill_parent"
     android:id="@+id/FlyOutContent"
     android:background="@android:color/background_light">
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="1dp"
-        android:id="@+id/view1"
-        android:background="#ffff0000" />
-    <FrameLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/frameLayout1"
-        android:background="#ffd00000">
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/linearLayout1">
-            <View
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:id="@+id/MenuButton"
-                android:layout_margin="4dp"
-                android:background="@drawable/action_menu" />
-            <RelativeLayout
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:id="@+id/relativeLayout1">
-                <TextView
-                    android:text="Log a fault"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:id="@+id/textView2"
-                    android:gravity="center"
-                    android:textColor="#fff6f6f6"
-                    android:layout_marginLeft="8dp"
-                    android:layout_alignParentLeft="true" />
-                <ImageView
-                    android:src="@android:drawable/ic_input_add"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:id="@+id/btnAddFault"
-                    android:layout_gravity="right"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="10dp" />
-            </RelativeLayout>
-        </LinearLayout>
-    </FrameLayout>
+    <include
+        layout="@layout/layoutToolbar" />
     <TableLayout
         android:minWidth="25px"
         android:minHeight="25px"

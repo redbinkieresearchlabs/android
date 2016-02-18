@@ -13,22 +13,36 @@ namespace RedBinkieResearchLabs
 
     public class MainActivity : Activity
     {
- //       int count = 1;
-
+        //       int count = 1;
+        ISharedPreferences prefs = Application.Context.GetSharedPreferences("FlowPref", FileCreationMode.Private);
+        
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
 
+            if (prefs.GetString("uname", null) == null) //no user account exists, dont force your way in
+            {
+                StartActivity(typeof(doLogin));
+            }
+
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            TextView messageText = FindViewById<TextView>(Resource.Id.welcomeMessage);
-            messageText.Text = "Hello Asrar Makrani";// + sharedPref.GetPreference(Application.Context,"uname","");
+            SetProfile(); //get the profile data and put it under preferences
+            TextView username = FindViewById<TextView>(RedBinkieResearchLabs.Resource.Id.textUserName);
+            username.Text = prefs.GetString("fullname", null);
 
             //build the menu
             clsMenu menu = new clsMenu(this);
             menu.buildMenuIndividual(0);
             menu.buildMenu();
+
+        }
+
+        private void SetProfile()
+        {
+            clsGetProfile objGetProfile = new clsGetProfile();
+            objGetProfile.GetProfile(prefs.GetString("uid", null));
         }
     }
 }

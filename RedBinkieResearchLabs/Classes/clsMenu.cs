@@ -17,7 +17,7 @@ namespace RedBinkieResearchLabs
     public class clsMenu
     {
         public Activity activity;
-
+        ISharedPreferences prefs = Application.Context.GetSharedPreferences("FlowPref", FileCreationMode.Private);
         public clsMenu(Activity _activity)
         {
             this.activity = _activity;
@@ -60,6 +60,15 @@ namespace RedBinkieResearchLabs
             var menuButtonFault = this.activity.FindViewById(RedBinkieResearchLabs.Resource.Id.linearFault);
             menuButtonFault.Click += (sender, e) => {
                 this.activity.StartActivity(typeof(activityLogFault));
+            };
+
+            //attach event to the menu item logout
+            var menuButtonLogout = this.activity.FindViewById(RedBinkieResearchLabs.Resource.Id.linearLogout);
+            menuButtonLogout.Click += (sender, e) => {
+                ISharedPreferencesEditor editor = prefs.Edit();
+                editor.Clear();
+                editor.Apply();
+                this.activity.StartActivity(typeof(doLogin));
             };
 
         }
@@ -111,7 +120,9 @@ namespace RedBinkieResearchLabs
                     break;
             }
 
-            var menuButton = this.activity.FindViewById(RedBinkieResearchLabs.Resource.Id.MenuButton);
+            //lets get the layout container first
+            var parentLayout = this.activity.FindViewById(RedBinkieResearchLabs.Resource.Id.frameLayoutToolbar);
+            View menuButton = parentLayout.FindViewById<View>(RedBinkieResearchLabs.Resource.Id.MenuButton);
             menuButton.Click += (sender, e) => {
                 menu.AnimatedOpened = !menu.AnimatedOpened;
             };

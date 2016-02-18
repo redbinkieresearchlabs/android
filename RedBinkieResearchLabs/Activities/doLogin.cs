@@ -14,7 +14,7 @@ using Android.Graphics;
 
 namespace RedBinkieResearchLabs
 {
-    [Activity(Label = "Flow", MainLauncher = true, Icon = "@drawable/icon", Theme = "@android:style/Theme.NoTitleBar")]
+    [Activity(Label = "Flow", Icon = "@drawable/icon", Theme = "@android:style/Theme.NoTitleBar")]
 
     public class doLogin : Activity
     {

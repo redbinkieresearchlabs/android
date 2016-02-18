@@ -45,10 +45,10 @@ namespace RedBinkieResearchLabs
             spinnerFaultStatus.Adapter = adapter;
 
             //add a listener to our add button
-            var AddFault = FindViewById(Resource.Id.btnAddFault);
-            AddFault.Click += (sender, e) => {
-                StartActivity(typeof(actFaultEdit));
-            };
+            //var AddFault = FindViewById(Resource.Id.btnAddFault);
+            //AddFault.Click += (sender, e) => {
+            //    StartActivity(typeof(actFaultEdit));
+            //};
         }
 
         private void spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)

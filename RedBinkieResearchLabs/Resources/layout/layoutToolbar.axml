@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/frameLayoutToolbar"
+    android:background="@color/primaryDark">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutToolbar">
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/MenuButton"
+            android:layout_margin="4dp"
+            android:background="@drawable/action_menu" />
+        <TextView
+            android:text="My Dashboard"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/textViewToolbar"
+            android:gravity="center"
+            android:textColor="#fff6f6f6"
+            android:layout_marginLeft="8dp" />
+    </LinearLayout>
+</FrameLayout>

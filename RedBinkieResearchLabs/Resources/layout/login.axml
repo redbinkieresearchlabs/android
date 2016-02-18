@@ -30,12 +30,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editText2"
-        android:text="11111" />
+        android:text="123123" />
     <CheckBox
         android:text="Remember Me"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/checkBox1" />
+        android:id="@+id/checkBox1"
+        android:checked="true" />
     <Button
         android:text="Login"
         android:layout_width="wrap_content"
@@ -50,6 +51,6 @@
         android:id="@+id/textView3"
         android:layout_gravity="center"
         android:textAlignment="gravity"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="25dp"
         android:gravity="bottom" />
 </LinearLayout>
